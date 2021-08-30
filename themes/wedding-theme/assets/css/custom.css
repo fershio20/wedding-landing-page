@@ -1,0 +1,140 @@
+
+@font-face {
+  font-family: 'Architects Daughter';
+  src: url('../fonts/ArchitectsDaughter-Regular.ttf');
+}
+@font-face {
+  font-family: 'Autography';
+  src: url('../fonts/Autography.otf');
+}
+#main-section {
+    min-height: 720px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+html,body{
+	font-family: 'Architects Daughter', sans-serif;
+	font-size: 18px;
+	color: #333;
+	scroll-behavior: smooth;
+}
+.text-main-container{
+	min-height: 720px;
+}
+h1{
+	font-size: 60px;
+}
+h1,h3{
+	font-family: 'Autography', serif;
+}
+.title{
+	font-family: 'Autography', serif;
+}
+
+img.flower-img-main {
+    position: absolute;
+    top: 10px;
+    max-width: 640px;
+}
+
+.bg-accent{
+	background-color: #D7B7A2; 
+}
+.bg-white{
+	background-color: #FFF; 
+}
+
+.text-white{
+	color: #FFF;
+}
+.wdng-text-accent{
+	color: #D7B7A2;
+}
+
+.wdng-txt-subtitle{
+	font-size: 23px;
+
+}
+h3.wdng-text-accent{
+	font-size: 53px;
+}
+
+.btn.bg-accent{
+	border-radius: 20px;
+}
+
+.card-wdng {
+    text-align: center;
+    border: 2px solid #d7b7a2;
+    border-radius: 20px;
+    min-height: 350px;
+}
+
+.card-wdng-header {
+    background: #d7b7a2;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    margin-top: -2px;
+}
+
+.card-wdng-body {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: #d7b7a2;
+}
+section#engagement > .container {
+    height: 640px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.call-container {
+    text-align: center;
+    background: #d7b7a2;
+    border-radius: 20px;
+    height: 200px;
+}
+
+
+span.tick-label.tick-text {
+    font-size: 32px;
+}
+
+div#timerSection {
+    max-width: 860px;
+    margin: auto;
+}
+
+.tick {
+    font-size:1rem;
+}
+
+.tick-label {
+    font-size:.375em;
+    text-align:center;
+}
+
+.tick-group {
+    margin:0 .25em;
+    text-align:center;
+}
+
+
+#saveTheDate{
+	min-height: 660px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

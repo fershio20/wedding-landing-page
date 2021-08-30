@@ -32,3 +32,4 @@ package-lock.json
 /modules
 /node_modules
 .github/*
+themes/wedding-theme/assets/node_modules/*
