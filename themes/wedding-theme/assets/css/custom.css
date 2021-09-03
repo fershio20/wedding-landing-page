@@ -192,12 +192,12 @@ span.htext {
     margin-top: 160px;
 }
 
-a.col-4.cardGallery {
+.col-md-4.cardGallery {
     height: 250px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
-a.col-4.cardGallery .img-fluid {
+.col-md-4.cardGallery .img-fluid {
     object-fit: cover;
     width: 350px;
     height: 350px;
@@ -209,4 +209,54 @@ a.col-4.cardGallery .img-fluid {
 .bgSecondary{
     background-size: cover;
     background-position: center center;
+}
+
+
+@media screen and (max-width: 414px){
+    #main-section {
+        min-height: auto;
+        height: 270px;
+        position: relative;
+    }
+    .text-main-container {
+        min-height: auto;
+    }
+    #coupleNames h1.text-main {
+        font-size: 50px !important;
+        line-height: 36px;
+    }
+    div#coupleNames {
+        bottom: -180px;
+        position: absolute;
+    }
+    #saveTheDate >div > h1 {
+        font-size: 60px !important;
+        margin-top: 110px;
+    }
+    section {
+        padding: 0 15px;
+    }
+    .description {
+        font-size: 24px;
+    }
+    span.tick-label.tick-text {
+        font-size: 18px;
+    }
+    h3.wdng-text-accent {
+        font-size: 42px;
+    }
+    .engagementMessage {
+        margin-top: 20px;
+    }
+    h1.text-light-theme {
+        font-size: 52px;
+    }
+    .col-md-4.cardGallery .img-fluid {
+        object-fit: cover;
+        width: 350px;
+        height: 180px;
+    }
+    .col-md-4.cardGallery {
+        height: 180px;
+    }
 }
