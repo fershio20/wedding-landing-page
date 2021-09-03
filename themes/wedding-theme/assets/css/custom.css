@@ -4,7 +4,7 @@
   --main-color: #D8AC9C;
   --secondary-color: #999B84;
   --third-color: #F4EEED;
-
+  --main-text: #665166;
 }
 
 .text-main{
@@ -14,6 +14,13 @@
     color: var(--main-color);
 }
 
+.text-light-theme{
+    color: var(--third-color);
+}
+
+.contrast-bg{
+    background-color: var(--contrast-color);
+}
 
 @font-face {
   font-family: 'Architects Daughter';
@@ -33,7 +40,7 @@
 html,body{
 	font-family: 'Architects Daughter', sans-serif;
 	font-size: 18px;
-	color: #333;
+	color: var(--main-text);
 	scroll-behavior: smooth;
 }
 .description{
@@ -59,7 +66,7 @@ img.flower-img-main {
 }
 
 .bg-accent{
-	background-color: #D7B7A2; 
+	background-color: var(--main-color); 
 }
 .bg-white{
 	background-color: #FFF; 
@@ -69,7 +76,7 @@ img.flower-img-main {
 	color: #FFF;
 }
 .wdng-text-accent{
-	color: #D7B7A2;
+	color: var(--main-color);
 }
 
 .wdng-txt-subtitle{
@@ -86,13 +93,11 @@ h3.wdng-text-accent{
 
 .card-wdng {
     text-align: center;
-    border: 2px solid #d7b7a2;
-    border-radius: 20px;
     min-height: 350px;
 }
 
 .card-wdng-header {
-    background: #d7b7a2;
+    background: var(--main-color);
     height: 90px;
     display: flex;
     justify-content: center;
@@ -106,6 +111,10 @@ h3.wdng-text-accent{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid #d7b7a2;
+    border-radius: 0 0 20px 20px;
+    border-top: 0;
+    padding: 20px;
 }
 
 a {
@@ -152,11 +161,13 @@ div#timerSection {
 }
 
 
-#saveTheDate{
-	min-height: 660px;
-	display: flex;
+#saveTheDate {
+    min-height: 660px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    background-size: cover;
+    background-position: bottom;
 }
 
 
@@ -172,4 +183,30 @@ div#timerSection {
 .tick-flip-panel {
     color: #F4EEED;
     background-color: #999B84;
+}
+span.htext {
+    border-bottom: 2px solid #d8ac9c;
+}
+
+.engagementMessage {
+    margin-top: 160px;
+}
+
+a.col-4.cardGallery {
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+a.col-4.cardGallery .img-fluid {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    max-height: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 4px rgb(215 183 162 / 5%);
+}
+
+.bgSecondary{
+    background-size: cover;
+    background-position: center center;
 }
