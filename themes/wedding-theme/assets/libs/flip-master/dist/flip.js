@@ -3864,22 +3864,22 @@ var getPresets = function getPresets() {
 };
 
 var constants = {
-	YEAR_PLURAL: 'Years',
-	YEAR_SINGULAR: 'Year',
-	MONTH_PLURAL: 'Months',
-	MONTH_SINGULAR: 'Month',
-	WEEK_PLURAL: 'Weeks',
-	WEEK_SINGULAR: 'Week',
-	DAY_PLURAL: 'Days',
-	DAY_SINGULAR: 'Day',
-	HOUR_PLURAL: 'Hours',
-	HOUR_SINGULAR: 'Hour',
-	MINUTE_PLURAL: 'Minutes',
-	MINUTE_SINGULAR: 'Minute',
-	SECOND_PLURAL: 'Seconds',
-	SECOND_SINGULAR: 'Second',
-	MILLISECOND_PLURAL: 'Milliseconds',
-	MILLISECOND_SINGULAR: 'Millisecond'
+	YEAR_PLURAL: 'Años',
+	YEAR_SINGULAR: 'Año',
+	MONTH_PLURAL: 'Meses',
+	MONTH_SINGULAR: 'Mes',
+	WEEK_PLURAL: 'Semanas',
+	WEEK_SINGULAR: 'Semana',
+	DAY_PLURAL: 'Días',
+	DAY_SINGULAR: 'Dia',
+	HOUR_PLURAL: 'Horas',
+	HOUR_SINGULAR: 'Hora',
+	MINUTE_PLURAL: 'Minutos',
+	MINUTE_SINGULAR: 'Minuto',
+	SECOND_PLURAL: 'Segundos',
+	SECOND_SINGULAR: 'Segundo',
+	MILLISECOND_PLURAL: 'Milisegundos',
+	MILLISECOND_SINGULAR: 'Milisegundo'
 };
 
 var presets = {

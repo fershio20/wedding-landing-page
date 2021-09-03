@@ -1,3 +1,19 @@
+:root {
+  
+  --contrast-color: #999B84;
+  --main-color: #D8AC9C;
+  --secondary-color: #999B84;
+  --third-color: #F4EEED;
+
+}
+
+.text-main{
+    color: var(--third-color);
+}
+.text-accent{
+    color: var(--main-color);
+}
+
 
 @font-face {
   font-family: 'Architects Daughter';
@@ -11,7 +27,7 @@
     min-height: 720px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: top center;
 }
 
 html,body{
@@ -19,6 +35,9 @@ html,body{
 	font-size: 18px;
 	color: #333;
 	scroll-behavior: smooth;
+}
+.description{
+    font-size: 32px;
 }
 .text-main-container{
 	min-height: 720px;
@@ -108,9 +127,10 @@ section#engagement > .container {
 }
 
 
-span.tick-label.tick-text {
+/*span.tick-label.tick-text {
     font-size: 32px;
-}
+
+}*/
 
 div#timerSection {
     max-width: 860px;
@@ -137,4 +157,19 @@ div#timerSection {
 	display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+#coupleNames {
+    background: var(--main-color);
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px;
+    opacity: 0.8;
+    color: #F1E8EA;
+}
+
+.tick-flip-panel {
+    color: #F4EEED;
+    background-color: #999B84;
 }
