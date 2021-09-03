@@ -12,6 +12,7 @@
     <!-- lightgallery plugins -->
     <link type="text/css" rel="stylesheet" href="{{'assets/node_modules/lightgallery/css/lg-zoom.css' | theme}}" />
     <link type="text/css" rel="stylesheet" href="{{'assets/node_modules/lightgallery/css/lg-thumbnail.css' | theme}}" />
+    <link rel="stylesheet" href="{{'assets/node_modules/aos/dist/aos.css' | theme}}" />
 	<link rel="stylesheet" href="{{'assets/css/custom.css' | theme }}">
 	<title>Lore y Fer</title>
 </head>
@@ -22,16 +23,21 @@
 	<script type="text/javascript" src="{{'assets/node_modules/jquery/dist/jquery.min.js' | theme }}"></script> 
 	<script type="text/javascript" src="{{'assets/libs/flip-master/dist/flip.js' | theme }}"></script>
     <script src="{{'assets/node_modules/lightgallery/lightgallery.umd.js' | theme}}"></script>
+    <script src="{{'assets/node_modules/aos/dist/aos.js' | theme }}"></script>
 
     <!-- lightgallery plugins -->
     <script src="{{'assets/node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.min.js' | theme}}"></script>
     <script src="{{'assets/node_modules/lightgallery/plugins/zoom/lg-zoom.umd.js' | theme}}"></script>
+
+
 	<script type="text/javascript">
 			$(document).ready(()=>{
 				lightGallery(document.getElementById("gallery-container"), {
 					speed: 500,
 					plugins: [lgZoom,lgThumbnail] 
 				});
+
+				AOS.init();
 			})
 
 			function handleTickInit(tick) {
