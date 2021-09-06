@@ -226,12 +226,11 @@ span.htext {
         line-height: 36px;
     }
     div#coupleNames {
-        bottom: -180px;
-        position: absolute;
+        margin-bottom: auto;
     }
     #saveTheDate >div > h1 {
         font-size: 60px !important;
-        margin-top: 110px;
+        margin-top: 30px;
     }
     section {
         padding: 0 15px;
