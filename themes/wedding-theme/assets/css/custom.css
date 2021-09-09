@@ -259,3 +259,17 @@ span.htext {
         height: 180px;
     }
 }
+
+.btn-alt {
+    color: #d8ac9c;
+    background-color: #fcf9fc;
+    border-color: #fcf9fc;
+    transition: .15s;
+}
+
+
+.btn-alt:hover {
+    color: #d8ac9c;
+    background-color: #e8e6e8;
+    border-color: #e8e6e8;
+}
