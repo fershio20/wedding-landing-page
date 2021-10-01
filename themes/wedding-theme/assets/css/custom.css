@@ -1,0 +1,275 @@
+:root {
+  
+  --contrast-color: #999B84;
+  --main-color: #D8AC9C;
+  --secondary-color: #999B84;
+  --third-color: #F4EEED;
+  --main-text: #665166;
+}
+
+.text-main{
+    color: var(--third-color);
+}
+.text-accent{
+    color: var(--main-color);
+}
+
+.text-light-theme{
+    color: var(--third-color);
+}
+
+.contrast-bg{
+    background-color: var(--contrast-color);
+}
+
+@font-face {
+  font-family: 'Architects Daughter';
+  src: url('../fonts/ArchitectsDaughter-Regular.ttf');
+}
+@font-face {
+  font-family: 'Autography';
+  src: url('../fonts/Autography.otf');
+}
+#main-section {
+    min-height: 720px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+html,body{
+	font-family: 'Architects Daughter', sans-serif;
+	font-size: 18px;
+	color: var(--main-text);
+	scroll-behavior: smooth;
+}
+.description{
+    font-size: 32px;
+}
+.text-main-container{
+	min-height: 720px;
+}
+h1{
+	font-size: 60px;
+}
+h1,h3{
+	font-family: 'Autography', serif;
+}
+.title{
+	font-family: 'Autography', serif;
+}
+
+img.flower-img-main {
+    position: absolute;
+    top: 10px;
+    max-width: 640px;
+}
+
+.bg-accent{
+	background-color: var(--main-color); 
+}
+.bg-white{
+	background-color: #FFF; 
+}
+
+.text-white{
+	color: #FFF;
+}
+.wdng-text-accent{
+	color: var(--main-color);
+}
+
+.wdng-txt-subtitle{
+	font-size: 23px;
+
+}
+h3.wdng-text-accent{
+	font-size: 53px;
+}
+
+.btn.bg-accent{
+	border-radius: 20px;
+}
+
+.card-wdng {
+    text-align: center;
+    min-height: 350px;
+}
+
+.card-wdng-header {
+    background: var(--main-color);
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    margin-top: -2px;
+}
+
+.card-wdng-body {
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #d7b7a2;
+    border-radius: 0 0 20px 20px;
+    border-top: 0;
+    padding: 20px;
+}
+
+a {
+    color: #d7b7a2;
+}
+section#engagement > .container {
+    height: 640px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.call-container {
+    text-align: center;
+    background: #d7b7a2;
+    border-radius: 20px;
+    height: 200px;
+}
+
+
+/*span.tick-label.tick-text {
+    font-size: 32px;
+
+}*/
+
+div#timerSection {
+    max-width: 860px;
+    margin: auto;
+}
+
+.tick {
+    font-size:1rem;
+}
+
+.tick-label {
+    font-size:.375em;
+    text-align:center;
+}
+
+.tick-group {
+    margin:0 .25em;
+    text-align:center;
+}
+
+
+#saveTheDate {
+    min-height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+#coupleNames {
+    background: var(--main-color);
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px;
+    opacity: 0.8;
+    color: #F1E8EA;
+}
+
+.tick-flip-panel {
+    color: #F4EEED;
+    background-color: #999B84;
+}
+span.htext {
+    border-bottom: 2px solid #d8ac9c;
+}
+
+.engagementMessage {
+    margin-top: 160px;
+}
+
+.col-md-4.cardGallery {
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.col-md-4.cardGallery .img-fluid {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    max-height: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 4px rgb(215 183 162 / 5%);
+}
+
+.bgSecondary{
+    background-size: cover;
+    background-position: center center;
+}
+
+
+@media screen and (max-width: 414px){
+    #main-section {
+        min-height: auto;
+        height: 270px;
+        position: relative;
+    }
+    .text-main-container {
+        min-height: auto;
+    }
+    #coupleNames h1.text-main {
+        font-size: 50px !important;
+        line-height: 36px;
+    }
+    div#coupleNames {
+        margin-bottom: auto;
+    }
+    #saveTheDate >div > h1 {
+        font-size: 60px !important;
+        margin-top: 30px;
+    }
+    section {
+        padding: 0 15px;
+    }
+    .description {
+        font-size: 24px;
+    }
+    span.tick-label.tick-text {
+        font-size: 18px;
+    }
+    h3.wdng-text-accent {
+        font-size: 42px;
+    }
+    .engagementMessage {
+        margin-top: 20px;
+    }
+    h1.text-light-theme {
+        font-size: 52px;
+    }
+    .col-md-4.cardGallery .img-fluid {
+        object-fit: cover;
+        width: 350px;
+        height: 180px;
+    }
+    .col-md-4.cardGallery {
+        height: 180px;
+    }
+}
+
+.btn-alt {
+    color: #d8ac9c;
+    background-color: #fcf9fc;
+    border-color: #fcf9fc;
+    transition: .15s;
+}
+
+
+.btn-alt:hover {
+    color: #d8ac9c;
+    background-color: #e8e6e8;
+    border-color: #e8e6e8;
+}
