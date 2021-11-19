@@ -1,0 +1,6 @@
+plugin:
+    name: 'fvera.weddingmanager::lang.plugin.name'
+    description: 'fvera.weddingmanager::lang.plugin.description'
+    author: fvera
+    icon: oc-icon-check-circle
+    homepage: ''

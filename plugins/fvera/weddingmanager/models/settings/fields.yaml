@@ -1,0 +1,59 @@
+# ===================================
+#  Form Field For Settings Model
+# ===================================
+
+fields:
+    nombre_novia:
+        label: Nombre de la Novia
+        span: auto
+        type: text
+        tab: General
+    nombre_novio:
+        label: Nombre del novio
+        description: Nombre del novio para mostrar en el frontend
+        type: text
+        span: auto
+        tab: General
+    nombre_novia:
+        label: Nombre de la Novia
+        span: auto
+        type: text
+        tab: General
+    boda_tag:
+        label: Frase de la boda
+        span: auto
+        type: text
+        tab: General
+    boda_date:
+        label: Fecha
+        description: Fecha de la boda
+        span: auto
+        type: datepicker
+        mode: date
+        tab: General
+    direccion_ceremonia:
+        label: Dirección de la Ceremonia
+        type: text
+        span: auto
+        tab: General
+    direccion_fiesta:
+        label: Dirección de la Fiesta
+        type: text
+        span: auto
+        tab: General
+    section_history:
+        label: Nuestra Historia
+        tab: Pagina Principal
+    photo_history:
+        label: Foto sección Nuestra Historia
+        type: mediafinder
+        mode: image
+        span: auto
+        tab: Pagina Principal
+    nuestra_historia:
+        label: Nuestra Historia
+        type: richeditor
+        span: auto
+        size: huge
+        tab: Pagina Principal
+
