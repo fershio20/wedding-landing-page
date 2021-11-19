@@ -1,16 +1,33 @@
-<section id="main-section" style="background-image: url({{'assets/images/bgMain.jpg' | theme }})">
+<section id="main-section" style="background-image: url({{'assets/images/backgrounds/tf2_bg.jpg' | theme }})">
 	<div class="justify-content-center h-100 align-items-end text-main-container p-relative d-none d-md-flex">
 		{#<img src="{{'assets/images/flower-arrangement.png' | theme }}" alt="" class="flower-img-main">#}
-		<div id="coupleNames" class="text-center" data-aos="fade_up">
+		{# <div id="coupleNames" class="text-center" data-aos="fade_up">
 			<p>Nos casamos...</p>
 			<h1 id="" class="text-main" style="font-size: 60px;">
-				Lorena y Fernando
+				{{ settings.nombre_novia }} y {{ settings.nombre_novio }}
 			</h1>
 			{% if this.page.id == 'index' %}	
 				<a class="btn btn-alt" href='https://docs.google.com/forms/d/1wFHN80z59YQfUzGtH8HdXg0UcGSX91mRVDsrV0X1adA/edit'>Confirma tu asistencia</a>
 			{% endif %}
-		</div>
+		</div> #}
 		
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<div>
+					<img src="{{ settings.photo_history | media }}" alt="" class="w-100">
+				</div>
+			</div>
+			<div class="col-12 col-md-6 d-flex align-items-center">
+			<div class="">
+				<div class="">
+					<h1>Nuestra Historia</h1>
+					<p class="block-description">{{ settings.nuestra_historia | raw }}</p>
+				</div>
+			</div>
+			</div>
+		</div>
 	</div>
 </section>
 <div class="justify-content-center h-100 align-items-end text-main-container p-relative d-flex d-md-none">
@@ -26,3 +43,8 @@
 		</div>
 		
 </div>
+<section>
+<section id="ourHistory" class="py-5">
+</section>
+
+</section>

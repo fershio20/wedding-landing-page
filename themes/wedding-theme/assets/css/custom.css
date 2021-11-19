@@ -30,15 +30,23 @@
   font-family: 'Autography';
   src: url('../fonts/Autography.otf');
 }
+@font-face {
+  font-family: 'Autography';
+  src: url('../fonts/Stadella.ttf');
+}
+@font-face {
+  font-family: 'Baskerville';
+  src: url('../fonts/Baskerville.ttf');
+}
 #main-section {
     min-height: 720px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
 }
 
 html,body{
-	font-family: 'Architects Daughter', sans-serif;
+	font-family: 'Baskerville', sans-serif;
 	font-size: 18px;
 	color: var(--main-text);
 	scroll-behavior: smooth;
@@ -53,10 +61,10 @@ h1{
 	font-size: 60px;
 }
 h1,h3{
-	font-family: 'Autography', serif;
+	font-family: 'Stadella', serif;
 }
 .title{
-	font-family: 'Autography', serif;
+	font-family: 'Stadella', serif;
 }
 
 img.flower-img-main {

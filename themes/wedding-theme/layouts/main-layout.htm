@@ -1,3 +1,15 @@
+==
+<?php
+	function onStart(){
+		use Fvera\WeddingManager\Models\Settings;
+
+		$this['settings'] = $data = Settings::instance();
+		tracelog($data);
+
+	}
+
+?>
+==
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +41,7 @@
     <link type="text/css" rel="stylesheet" href="{{'assets/node_modules/lightgallery/css/lg-thumbnail.css' | theme}}" />
     <link rel="stylesheet" href="{{'assets/node_modules/aos/dist/aos.css' | theme}}" />
 	<link rel="stylesheet" href="{{'assets/css/custom.css' | theme }}">
-	<title>Lore y Fer</title>
+	<title>.::{{settings.nombre_novia}} y {{ settings.nombre_novio }}::.</title>
 </head>
 <body>
 	<!-- Google Tag Manager (noscript) -->
@@ -63,7 +75,7 @@
 
 			  var nextYear = (new Date()).getFullYear() + 1;
 			  
-			  Tick.count.down('2021-10-15').onupdate = function(value) {
+			  Tick.count.down('2021-12-12').onupdate = function(value) {
 			    tick.value = value;
 			  };
 

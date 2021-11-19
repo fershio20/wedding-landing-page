@@ -3,7 +3,10 @@
 		<h1 class="wdng-text-accent" style="font-size: 100px;">Save the Date</h1>
 		<p class="description">Ya estamos contando los días para la gran fecha</p>
 		<p class="description ">
-		15 <span class="text-accent">|</span> 10  <span class="text-accent">|</span> 2021
+		{{ settings.date | date('d') }} <span class="text-accent">-</span>
+		{{ settings.date | date('m') }} <span class="text-accent">-</span>
+		{{ settings.date | date('Y') }}
+		
 		</h6>
 	</div>
 	<div class="container">
