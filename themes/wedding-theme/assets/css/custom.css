@@ -31,7 +31,7 @@
   src: url('../fonts/Autography.otf');
 }
 @font-face {
-  font-family: 'Autography';
+  font-family: 'Stadella';
   src: url('../fonts/Stadella.ttf');
 }
 @font-face {
@@ -50,6 +50,12 @@ html,body{
 	font-size: 18px;
 	color: var(--main-text);
 	scroll-behavior: smooth;
+}
+div#main-first-step {
+    border: 2px solid red;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
 }
 .description{
     font-size: 32px;
