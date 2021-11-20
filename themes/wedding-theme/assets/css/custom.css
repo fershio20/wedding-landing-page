@@ -56,6 +56,29 @@ div#main-first-step {
     height: 100vh;
     background-size: cover;
     background-position: center center;
+    position: relative;
+}
+.couple-name h1 {
+    font-size: 120px;
+}
+.couple-name {
+    position: absolute;
+    top: calc(30vh);
+}
+.deco-img-box{
+    position: absolute;
+    bottom: -120px;
+    max-width: 520px;    
+}
+.history-photo-box img {
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 rgb(189 76 76 / 33%);
+}
+div#deco-img-l {
+    left: -100px;
+}
+div#deco-img-r {
+    right: -100px;
 }
 .description{
     font-size: 32px;
