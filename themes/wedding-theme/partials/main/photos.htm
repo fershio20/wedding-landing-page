@@ -10,42 +10,14 @@
 					<div class="col-12">
 <div class="row" id="gallery-container">
 
-    
+    {% for data in settings.gallery %}
     <a class="col-6 col-md-4 mb-4 cardGallery" 
     	{#data-lg-size="400-600-375, 600-900-480, 1600-2400" #}
-    	data-src="{{'assets/images/gallery/photo(1).jpg' | theme}}" >
-        <img class="img-fluid" style="object-position: top;" src="{{'assets/images/gallery/photo(1).jpg' | theme}}" />
+    	data-src="{{ data.photo | media }}" >
+        <img class="img-fluid" style="object-position: top;" src="{{ data.photo | media }}" />
     </a>	
-    
-    <a class="col-6 col-md-4 mb-4 cardGallery" 
-    	{#data-lg-size="400-600-375, 600-900-480, 1600-2400" #}
-    	data-src="{{'assets/images/gallery/photo(2).JPG' | theme}}" >
-        <img class="img-fluid" style="object-position: top;" src="{{'assets/images/gallery/photo(2).JPG' | theme}}" />
-    </a>	
-    
-    <a class="col-6 col-md-4 mb-4 cardGallery" 
-    	{#data-lg-size="400-600-375, 600-900-480, 1600-2400" #}
-    	data-src="{{'assets/images/gallery/photo(3).JPG' | theme}}" >
-        <img class="img-fluid" style="object-position: top;" src="{{'assets/images/gallery/photo(3).JPG' | theme}}" />
-    </a>	
-    
-    <a class="col-6 col-md-4 mb-4 cardGallery" 
-    	{#data-lg-size="400-600-375, 600-900-480, 1600-2400" #}
-    	data-src="{{'assets/images/gallery/photo(4).JPG' | theme}}" >
-        <img class="img-fluid" style="object-position: center;" src="{{'assets/images/gallery/photo(4).JPG' | theme}}" />
-    </a>	
-    
-    <a class="col-6 col-md-4 mb-4 cardGallery" 
-    	{#data-lg-size="400-600-375, 600-900-480, 1600-2400" #}
-    	data-src="{{'assets/images/gallery/photo(5).JPG' | theme}}" >
-        <img class="img-fluid" style="object-position: center;" src="{{'assets/images/gallery/photo(5).JPG' | theme}}" />
-    </a>	
-    
-    <a class="col-6 col-md-4 mb-4 cardGallery" 
-    	{#data-lg-size="400-600-375, 600-900-480, 1600-2400" #}
-    	data-src="{{'assets/images/gallery/photo(6).JPG' | theme}}" >
-        <img class="img-fluid" style="object-position: top;" src="{{'assets/images/gallery/photo(6).JPG' | theme}}" />
-    </a>
+    {% endfor %}
+
 
 </div>
 					</div>

@@ -1,10 +1,12 @@
 :root {
   
-  --contrast-color: #999B84;
-  --main-color: #D8AC9C;
-  --secondary-color: #999B84;
+  --contrast-color: #C1C69B;
+  --main-color: #f7d2d2;
+  --secondary-color: #C1C69B;
   --third-color: #F4EEED;
   --main-text: #665166;
+  --bg-color: #f7f8fa;
+  --bg-color: #f7f8fa;
 }
 
 .text-main{
@@ -43,6 +45,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
+    background-color: linear-gradient(0deg, #F8F9FB, #fffcfc);
 }
 
 html,body{
@@ -50,13 +53,26 @@ html,body{
 	font-size: 18px;
 	color: var(--main-text);
 	scroll-behavior: smooth;
+    background-color: var(--bg-color);
 }
 div#main-first-step {
     border: 2px solid red;
     height: 100vh;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     position: relative;
+}
+div#main-second-step {
+    min-height: 740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-bg{
+    background-color: var(--main-color);
+}
+.f-100{
+    font-size: 100px;
 }
 .couple-name h1 {
     font-size: 120px;
@@ -87,9 +103,12 @@ div#deco-img-r {
 	min-height: 720px;
 }
 h1{
-	font-size: 60px;
+	font-size: 100px;
 }
-h1,h3{
+h2{
+	font-size: 65px;
+}
+h1,h2,h3{
 	font-family: 'Stadella', serif;
 }
 .title{
@@ -121,7 +140,7 @@ img.flower-img-main {
 
 }
 h3.wdng-text-accent{
-	font-size: 53px;
+	font-size: 60px;
 }
 
 .btn.bg-accent{
@@ -135,7 +154,7 @@ h3.wdng-text-accent{
 
 .card-wdng-header {
     background: var(--main-color);
-    height: 90px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,16 +163,25 @@ h3.wdng-text-accent{
 }
 
 .card-wdng-body {
-    height: 360px;
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #d7b7a2;
+    border: 2px solid var(--main-color);
     border-radius: 0 0 20px 20px;
     border-top: 0;
     padding: 20px;
+    background-color: var(--main-color);
+    padding-top: 0;
 }
-
+#wdng-locations p{
+    color: #665166;
+}
+.wdng-btn-alt {
+    background: #FFF;
+    color: var(--main-color);
+    font-weight: 500;
+}
 a {
     color: #d7b7a2;
 }
@@ -167,11 +195,10 @@ section#engagement > .container {
 
 .call-container {
     text-align: center;
-    background: #d7b7a2;
+    background: var(--secondary);
     border-radius: 20px;
     height: 200px;
 }
-
 
 /*span.tick-label.tick-text {
     font-size: 32px;
@@ -204,7 +231,8 @@ div#timerSection {
     flex-direction: column;
     justify-content: center;
     background-size: cover;
-    background-position: bottom;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 
