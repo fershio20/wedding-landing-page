@@ -195,9 +195,10 @@ section#engagement > .container {
 
 .call-container {
     text-align: center;
-    background: var(--secondary);
+    background: var(--secondary-color);
     border-radius: 20px;
     height: 200px;
+}
 }
 
 /*span.tick-label.tick-text {
@@ -284,12 +285,18 @@ section#giftsSection {
     background-position: bottom center;
     padding: 100px 0;
 }
-
+#mobile-main-block{
+    display: none;
+}
 @media screen and (max-width: 414px){
     #main-section {
         min-height: auto;
         height: 100vh;
         position: relative;
+        padding: 0;
+    }
+    .block-our-history {
+        margin-top: 50px;
     }
     .text-main-container {
         min-height: auto;
@@ -300,6 +307,13 @@ section#giftsSection {
         background-position: center center;
         position: relative;
         background-attachment: unset;
+        background-repeat: no-repeat;
+        display: none;
+    }
+    #mobile-main-block {
+        display: block;
+        height: 100%;
+        background-position: center center;
         background-repeat: no-repeat;
     }
     #coupleNames h1.text-main {
@@ -312,6 +326,18 @@ section#giftsSection {
     #saveTheDate >div > h1 {
         font-size: 60px !important;
         margin-top: 30px;
+    }
+    #saveTheDate {
+        min-height: auto;
+    }
+    section#callToAction {
+        padding: 0;
+    }
+    h1.text-white {
+        font-size: 60px;
+    }
+    h1.wdng-text-accent.f-100 {
+        font-size: 60px;
     }
     section {
         padding: 0 15px;
