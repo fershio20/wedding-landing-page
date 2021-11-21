@@ -4,3 +4,7 @@ plugin:
     author: fvera
     icon: oc-icon-check-circle
     homepage: ''
+permissions:
+    fvera.weddingmanager.manage_categories:
+        tab: Wedding Mannager
+        label: Gestor de boda

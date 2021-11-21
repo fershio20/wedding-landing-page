@@ -19,7 +19,7 @@ class Plugin extends PluginBase
                 'order'       => 1,
                 'keywords'    => 'wedding manager',
                 'class'       => Models\Settings::class,
-                'permissions' => ['fvera.weddingmanager.settings'],
+                'permissions' => ['fvera.weddingmanager.manage_categories'],
             ]
         ];
     }
