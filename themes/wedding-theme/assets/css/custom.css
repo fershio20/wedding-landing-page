@@ -61,6 +61,7 @@ div#main-first-step {
     background-position: center center;
     position: relative;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 div#main-second-step {
     min-height: 740px;
