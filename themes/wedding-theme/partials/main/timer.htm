@@ -59,8 +59,8 @@
 						<img src="{{'assets/images/icon-church.svg' | theme }}">
 					</div>
 					<h2 class="text-white">Ceremonia</h2>
-					<p>La ceremonia se realizará el <span class="htext">15 de Octubre a las 17:00 horas</span> en la Iglesia Santa Maria y San Nicolas, Lambaré.</p>
-					<a class="wdng-btn-alt btn  bg-accent mt-2" href="https://www.google.com/maps/place/San+Nicol%C3%A1s+y+Santa+Mar%C3%ADa,+Lambar%C3%A9/@-25.3240743,-57.6305384,17z/data=!3m1!4b1!4m5!3m4!1s0x945da83b8ab669b7:0xad441469aee0d1c5!8m2!3d-25.3240964!4d-57.628411" >Ver dirección</a>
+					<p>{{ settings.direccion_ceremonia | raw }}</p>
+					<a class="wdng-btn-alt btn  bg-accent mt-2" href="{{ settings.direccion_iglesia_link }}" >Ver dirección</a>
 				</div>
 			</div>
 			<div class="col-12 col-md-6 mt-5 mt-md-auto">
@@ -69,9 +69,15 @@
 						<img src="{{'assets/images/icon-cheer.svg' | theme }}">
 					</div>
 					<h2 class="text-white">Fiesta</h2>
-					<p>La fiesta se realizará el  <span class="htext">15 de Octubre a las 18:00</span> horas en Las Takuaras, Lambaré. </p>
-					<a class="wdng-btn-alt btn  bg-accent mt-2" href="https://www.google.com/maps/place/Las+Takuaras+Paseo+del+Yacht/@-25.3648857,-57.6408273,17z/data=!4m5!3m4!1s0x945da9e0c977f305:0x34b86cba1bad8478!8m2!3d-25.3648857!4d-57.6386386" >Ver dirección</a>
+					<p>{{ settings.direccion_fiesta | raw }}</p>
+					<a class="wdng-btn-alt btn  bg-accent mt-2" href="{{ settings.direccion_fiesta_link }}" >Ver dirección</a>
 				</div>
+			</div>
+			<div class="col-12 mt-5 pt-5">
+				<h2 class="text-white">Dress Code</h2>
+				<p class="">
+					{{settings.dress_code}}
+				</p>
 			</div>
 		</div>
 		{% endif %}

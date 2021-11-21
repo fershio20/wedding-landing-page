@@ -1,4 +1,4 @@
-<section id="giftsSection" class="py-5 bgSecondary" style="background-image: url({{'assets/images/backgrounds/bg-side-right-1.png' | theme }})">
+<section id="giftsSection" class="bgSecondary" style="background-image: url({{'assets/images/backgrounds/bg-side-right-1.png' | theme }})">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 mb-5">
@@ -17,7 +17,7 @@
 					</div>
 					<div class="card-wdng-body">
 						<div>
-							<p>Si deseas realizarnos un regalo estamos muy agradecidos y podés hacerlo acercandote a  <strong>Plaza Hogar</strong> y <strong>Feria Asunción</strong> y de forma online en <a href="https://tupi.com.py/regalos_en_lista/4069/Boda-de-Fernando-Vera-y-Lorena-Gaete-el-15-10-2021">Tupi</a>.</p>						
+							{{ settings.gift_list | raw }}
 						</div>
 
 					</div>
@@ -29,22 +29,13 @@
 						<h2 class="mt-2 text-white">Cuenta Bancaria</h2>
 					</div>
 					<div class="card-wdng-body">
-						<div class="row">							
+						<div class="row w-100">							
 							<div class="col">
-								<p>
-									<strong>Nro. Cuenta:</strong> 1190777<br>
-									<strong>Titular:</strong> Fernando Vera<br>
-									Vision Banco</p>
+								{{ settings.gift_account_novia | raw }}
 							</div>
 							<div class="col">
-								<p>
-									<strong>Nro. Cuenta:</strong> 13731991<br>
-									<strong>Titular:</strong> Lorena Gaete<br>
-									Vision Banco</p>
-							</div>
-							
-							
-							
+								{{ settings.gift_account_novio | raw }}
+							</div>															
 						</div>
 
 					</div>

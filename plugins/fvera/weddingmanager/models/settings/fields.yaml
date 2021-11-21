@@ -36,18 +36,38 @@ tabs:
             type: datepicker
             mode: date
             tab: General
+        section_location:
+            label: Direcciones
+            type: section
+            tab: Direcciones
         direccion_ceremonia:
             label: Dirección de la Ceremonia
-            type: text
+            type: richeditor
             span: auto
-            tab: General
+            tab: Direcciones
         direccion_fiesta:
             label: Dirección de la Fiesta
+            type: richeditor
+            span: auto
+            tab: Direcciones
+        direccion_fiesta_link:
+            label: Link de google maps de dirección de la Fiesta
+            type: text
+            span: auto
+            tab: Direcciones
+        direccion_iglesia_link:
+            label: Link de google maps de dirección de la Fiesta
+            type: text
+            span: auto
+            tab: Direcciones
+        dress_code:
+            label: Dress code
             type: text
             span: auto
             tab: General
         section_history:
             label: Nuestra Historia
+            type: section
             tab: Pagina Principal
         photo_history:
             label: Foto sección Nuestra Historia
@@ -77,5 +97,20 @@ tabs:
                         type: mediafinder
                         mode: image
                         span: auto
+        gift_list:
+            label: Lista de boda
+            type: richeditor
+            span: auto
+            tab: Lista de Bodas
+        gift_account_novia:
+            label: Cuenta Bancaria Novia
+            type: richeditor
+            span: auto
+            tab: Lista de Bodas
+        gift_account_novio:
+            label: Cuenta Bancaria Novio
+            type: richeditor
+            span: auto
+            tab: Lista de Bodas
 
 

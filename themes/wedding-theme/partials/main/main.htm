@@ -11,7 +11,7 @@
 					<a class="btn btn-alt" href='https://docs.google.com/forms/d/1wFHN80z59YQfUzGtH8HdXg0UcGSX91mRVDsrV0X1adA/edit'>Confirma tu asistencia</a>
 				{% endif %}
 			</div> #}
-			<div class="couple-name text-center">
+			{# <div class="couple-name text-center">
 				<h6 class="mb-0">Save the Date</h6>
 				<h1>
 					{{settings.nombre_novia}}
@@ -20,9 +20,10 @@
 				<h1>	
 					{{ settings.nombre_novio }}
 				</h1>
-			</div>
-			<div id="deco-img-l" class="deco-img-box"><img class="w-100 " src="{{'assets/images/backgrounds/flower-l.png' | theme }}" alt=""></div>
-			<div id="deco-img-r"  class="deco-img-box"><img class="w-100" src="{{'assets/images/backgrounds/flower-r.png' | theme }}" alt=""></div>
+			</div> #}
+			<div id="deco-img-center" class="deco-img-box"><img class="w-100 " src="{{'assets/images/backgrounds/flower-center.png' | theme }}" alt=""></div>
+			{# <div id="deco-img-l" class="deco-img-box"><img class="w-100 " src="{{'assets/images/backgrounds/flower-l.png' | theme }}" alt=""></div>
+			<div id="deco-img-r"  class="deco-img-box"><img class="w-100" src="{{'assets/images/backgrounds/flower-r.png' | theme }}" alt=""></div> #}
 		</div>
 	</div>
 	<div id="main-second-step" class="py-5 mt-5">
@@ -34,7 +35,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-md-6 d-flex align-items-center">
-				<div class="">
+				<div class="ml-2">
 					<div class="">
 						<h1 class="wdng-text-accent f-100">Nuestra Historia</h1>
 						<p class="block-description">{{ settings.nuestra_historia | raw }}</p>

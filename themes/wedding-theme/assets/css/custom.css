@@ -56,11 +56,11 @@ html,body{
     background-color: var(--bg-color);
 }
 div#main-first-step {
-    border: 2px solid red;
     height: 100vh;
     background-size: contain;
     background-position: center center;
     position: relative;
+    background-attachment: fixed;
 }
 div#main-second-step {
     min-height: 740px;
@@ -84,7 +84,7 @@ div#main-second-step {
 .deco-img-box{
     position: absolute;
     bottom: -120px;
-    max-width: 520px;    
+    /* max-width: 520px;     */
 }
 .history-photo-box img {
     border-radius: 25px;
@@ -262,20 +262,28 @@ span.htext {
     margin-bottom: 20px;
     border-radius: 10px;
 }
-.col-md-4.cardGallery .img-fluid {
+.cardGallery .img-fluid {
     object-fit: cover;
     width: 350px;
     height: 350px;
     max-height: 100%;
     border-radius: 4px;
     box-shadow: 0px 2px 2px 4px rgb(215 183 162 / 5%);
+    cursor: pointer;
+    transition: .15s ease-in-out;
 }
-
+.cardGallery .img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+}
 .bgSecondary{
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
 }
-
+section#giftsSection {
+    background-position: bottom center;
+    padding: 100px 0;
+}
 
 @media screen and (max-width: 414px){
     #main-section {
