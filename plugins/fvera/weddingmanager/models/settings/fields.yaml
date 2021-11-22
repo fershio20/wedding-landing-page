@@ -65,6 +65,16 @@ tabs:
             type: text
             span: auto
             tab: General
+        link_confirmacion:
+            label: Link confirmacion de asistencia
+            type: text
+            span: auto
+            tab: General
+        link_dj:
+            label: Link form DJ
+            type: text
+            span: auto
+            tab: General
         section_history:
             label: Nuestra Historia
             type: section
@@ -97,6 +107,8 @@ tabs:
                         type: mediafinder
                         mode: image
                         span: auto
+                        imageWidth: 250
+                        imageHeight: 250
         gift_list:
             label: Lista de boda
             type: richeditor
