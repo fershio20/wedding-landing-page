@@ -1,3 +1,15 @@
+==
+<?php
+	function onStart(){
+		use Fvera\WeddingManager\Models\Settings;
+
+		$this['settings'] = $data = Settings::instance();
+		tracelog($data);
+
+	}
+
+?>
+==
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,9 +39,10 @@
     <!-- lightgallery plugins -->
     <link type="text/css" rel="stylesheet" href="{{'assets/node_modules/lightgallery/css/lg-zoom.css' | theme}}" />
     <link type="text/css" rel="stylesheet" href="{{'assets/node_modules/lightgallery/css/lg-thumbnail.css' | theme}}" />
+    <link type="text/css" rel="stylesheet" href="{{'assets/node_modules/phosphor-icons/src/css/phosphor.css' | theme}}" />
     <link rel="stylesheet" href="{{'assets/node_modules/aos/dist/aos.css' | theme}}" />
 	<link rel="stylesheet" href="{{'assets/css/custom.css' | theme }}">
-	<title>Lore y Fer</title>
+	<title>.::{{settings.nombre_novia}} y {{ settings.nombre_novio }}::.</title>
 </head>
 <body>
 	<!-- Google Tag Manager (noscript) -->
@@ -39,6 +52,8 @@
 	{% page %}
 
 	{% partial 'general/footer' %}
+	
+
 	<script type="text/javascript" src="{{'assets/node_modules/jquery/dist/jquery.min.js' | theme }}"></script> 
 	<script type="text/javascript" src="{{'assets/libs/flip-master/dist/flip.js' | theme }}"></script>
     <script src="{{'assets/node_modules/lightgallery/lightgallery.umd.js' | theme}}"></script>
@@ -63,11 +78,12 @@
 
 			  var nextYear = (new Date()).getFullYear() + 1;
 			  
-			  Tick.count.down('2021-10-15').onupdate = function(value) {
+			  Tick.count.down('2021-12-12T17:00:00').onupdate = function(value) {
 			    tick.value = value;
 			  };
 
 			}
 	</script>
+	
 </body>
 </html>

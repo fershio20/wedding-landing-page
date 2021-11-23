@@ -1,28 +1,52 @@
-<section id="main-section" style="background-image: url({{'assets/images/bgMain.jpg' | theme }})">
-	<div class="justify-content-center h-100 align-items-end text-main-container p-relative d-none d-md-flex">
-		{#<img src="{{'assets/images/flower-arrangement.png' | theme }}" alt="" class="flower-img-main">#}
-		<div id="coupleNames" class="text-center" data-aos="fade_up">
-			<p>Nos casamos...</p>
-			<h1 id="" class="text-main" style="font-size: 60px;">
-				Lorena y Fernando
-			</h1>
-			{% if this.page.id == 'index' %}	
-				<a class="btn btn-alt" href='https://docs.google.com/forms/d/1wFHN80z59YQfUzGtH8HdXg0UcGSX91mRVDsrV0X1adA/edit'>Confirma tu asistencia</a>
-			{% endif %}
+<section id="main-section" >
+	<div id="main-first-step" style="background-image: url({{'assets/images/backgrounds/seed-bg.png' | theme }})">
+		<div class="justify-content-center h-100 align-items-end text-main-container p-relative d-none d-md-flex">
+			{#<img src="{{'assets/images/flower-arrangement.png' | theme }}" alt="" class="flower-img-main">#}
+			{# <div id="coupleNames" class="text-center" data-aos="fade_up">
+				<p>Nos casamos...</p>
+				<h1 id="" class="text-main" style="font-size: 60px;">
+					{{ settings.nombre_novia }} y {{ settings.nombre_novio }}
+				</h1>
+				{% if this.page.id == 'index' %}	
+					<a class="btn btn-alt" href='https://docs.google.com/forms/d/1wFHN80z59YQfUzGtH8HdXg0UcGSX91mRVDsrV0X1adA/edit'>Confirma tu asistencia</a>
+				{% endif %}
+			</div> #}
+			{# <div class="couple-name text-center">
+				<h6 class="mb-0">Save the Date</h6>
+				<h1>
+					{{settings.nombre_novia}}
+				</h1>
+				<h6>Y</h6>
+				<h1>	
+					{{ settings.nombre_novio }}
+				</h1>
+			</div> #}
+			<div id="deco-img-center" class="deco-img-box"><img class="w-100 " src="{{'assets/images/backgrounds/flower-center.png' | theme }}" alt=""></div>
+			{# <div id="deco-img-l" class="deco-img-box"><img class="w-100 " src="{{'assets/images/backgrounds/flower-l.png' | theme }}" alt=""></div>
+			<div id="deco-img-r"  class="deco-img-box"><img class="w-100" src="{{'assets/images/backgrounds/flower-r.png' | theme }}" alt=""></div> #}
 		</div>
-		
+	</div>
+	<div id="mobile-main-block" style="background-image: url({{'assets/images/backgrounds/seed-bg-mob.png' | theme }})">
 	</div>
 </section>
-<div class="justify-content-center h-100 align-items-end text-main-container p-relative d-flex d-md-none">
-		{#<img src="{{'assets/images/flower-arrangement.png' | theme }}" alt="" class="flower-img-main">#}
-		<div id="coupleNames" class="text-center" data-aos="fade_up">
-			<p>Nos casamos...</p>
-			<h1 id="" class="text-main" style="font-size: 60px;">
-				Lore y Fer
-			</h1>
-			{% if this.page.id == 'index' %}
-			<a class="btn btn-alt " href='https://docs.google.com/forms/d/1wFHN80z59YQfUzGtH8HdXg0UcGSX91mRVDsrV0X1adA/edit' style="font-size:12px;">Confirma tu asistencia</a>	
-			{% endif %}
+<section>
+	<div id="main-second-step" class="py-md-5 mt-4 mt-md-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="history-photo-box">
+						<img src="{{ settings.photo_history | media }}" alt="" class="w-100">
+					</div>
+				</div>
+				<div class="col-12 col-md-6 d-flex align-items-center">
+				<div class="ml-2">
+					<div class="block-our-history">
+						<h1 class="wdng-text-accent f-100">Nuestra Historia</h1>
+						<p class="block-description">{{ settings.nuestra_historia | raw }}</p>
+					</div>
+				</div>
+				</div>
+			</div>
 		</div>
-		
-</div>
+	</div>
+</section>

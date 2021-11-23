@@ -1,0 +1,128 @@
+# ===================================
+#  Form Field For Settings Model
+# ===================================
+tabs:
+    fields:
+        nombre_novia:
+            label: Nombre de la Novia
+            span: auto
+            type: text
+            tab: General
+        nombre_novio:
+            label: Nombre del novio
+            description: Nombre del novio para mostrar en el frontend
+            type: text
+            span: auto
+            tab: General
+        nombre_novia:
+            label: Nombre de la Novia
+            span: auto
+            type: text
+            tab: General
+        boda_tag:
+            label: Frase de la boda
+            span: auto
+            type: text
+            tab: General
+        boda_tag_author:
+            label: Autor de la frase de la boda
+            span: auto
+            type: text
+            tab: General
+        boda_date:
+            label: Fecha
+            description: Fecha de la boda
+            span: auto
+            type: datepicker
+            mode: date
+            tab: General
+        section_location:
+            label: Direcciones
+            type: section
+            tab: Direcciones
+        direccion_ceremonia:
+            label: Dirección de la Ceremonia
+            type: richeditor
+            span: auto
+            tab: Direcciones
+        direccion_fiesta:
+            label: Dirección de la Fiesta
+            type: richeditor
+            span: auto
+            tab: Direcciones
+        direccion_fiesta_link:
+            label: Link de google maps de dirección de la Fiesta
+            type: text
+            span: auto
+            tab: Direcciones
+        direccion_iglesia_link:
+            label: Link de google maps de dirección de la Fiesta
+            type: text
+            span: auto
+            tab: Direcciones
+        dress_code:
+            label: Dress code
+            type: text
+            span: auto
+            tab: General
+        link_confirmacion:
+            label: Link confirmacion de asistencia
+            type: text
+            span: auto
+            tab: General
+        link_dj:
+            label: Link form DJ
+            type: text
+            span: auto
+            tab: General
+        section_history:
+            label: Nuestra Historia
+            type: section
+            tab: Pagina Principal
+        photo_history:
+            label: Foto sección Nuestra Historia
+            type: mediafinder
+            mode: image
+            span: auto
+            tab: Pagina Principal
+        nuestra_historia:
+            label: Nuestra Historia
+            type: richeditor
+            span: auto
+            size: huge
+            tab: Pagina Principal
+        gallery:
+            label: Galeria de Fotos
+            type: repeater
+            titleFrom: name
+            tab: Galeria
+            form:
+                fields:
+                    name:
+                        label: Titulo de la foto
+                        type: text
+                        span: auto
+                    photo:
+                        label: Foto
+                        type: mediafinder
+                        mode: image
+                        span: auto
+                        imageWidth: 250
+                        imageHeight: 250
+        gift_list:
+            label: Lista de boda
+            type: richeditor
+            span: auto
+            tab: Lista de Bodas
+        gift_account_novia:
+            label: Cuenta Bancaria Novia
+            type: richeditor
+            span: auto
+            tab: Lista de Bodas
+        gift_account_novio:
+            label: Cuenta Bancaria Novio
+            type: richeditor
+            span: auto
+            tab: Lista de Bodas
+
+
