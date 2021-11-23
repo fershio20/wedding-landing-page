@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table fvera_weddingmanager_musica'
+    - builder_table_create_fvera_weddingmanager_musica.php

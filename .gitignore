@@ -33,3 +33,7 @@ package-lock.json
 /node_modules
 .github/*
 themes/wedding-theme/assets/node_modules/*
+
+!plugins/
+plugins/*
+!plugins/fvera/

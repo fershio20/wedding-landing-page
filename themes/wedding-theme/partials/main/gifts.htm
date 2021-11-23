@@ -1,7 +1,10 @@
-<section id="giftsSection" class="py-5 bgSecondary" style="background-image: url({{'assets/images/bg-second-r.png' | theme }})">
+<section id="giftsSection" class="bgSecondary" style="background-image: url({{'assets/images/backgrounds/bg-side-right-1.png' | theme }})">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 mb-5">
+				<div class="mx-auto text-center" style="filter:brightness(0.4);"> 
+					<img src="{{'assets/images/icon-plane.svg' | theme}}" alt="">
+				</div>
 				<p class="text-center font-italic description">
 				“Todo regalo que se da, aunque sea pequeño, en realidad es grande, si se da con cariño.”
 				</p>
@@ -10,12 +13,11 @@
 			<div class="col-12 col-md-6 mb-4 mb-md-auto">
 				<div class="card-wdng">				
 					<div class="card-wdng-header">
-						<img src="{{'assets/images/icon-gift.svg' | theme}}" alt="">
+						<h2 class="mt-2 text-white">Lista de Bodas</h2>
 					</div>
 					<div class="card-wdng-body">
 						<div>
-							<h3 class="wdng-text-accent mt-2">Lista de Bodas</h3>
-							<p>Si deseas realizarnos un regalo estamos muy agradecidos y podés hacerlo acercandote a  <strong>Plaza Hogar</strong> y <strong>Feria Asunción</strong> y de forma online en <a href="https://tupi.com.py/regalos_en_lista/4069/Boda-de-Fernando-Vera-y-Lorena-Gaete-el-15-10-2021">Tupi</a>.</p>						
+							{{ settings.gift_list | raw }}
 						</div>
 
 					</div>
@@ -24,29 +26,16 @@
 			<div class="col-12 col-md-6">
 				<div class="card-wdng">				
 					<div class="card-wdng-header">
-						<img src="{{'assets/images/icon-plane.svg' | theme}}" alt="">
+						<h2 class="mt-2 text-white">Cuenta Bancaria</h2>
 					</div>
 					<div class="card-wdng-body">
-						<div class="row">
-							<div class="col-12">
-								<h3 class="wdng-text-accent mt-2">Cuenta Bancaria</h3>
-							</div>
-							
+						<div class="row w-100">							
 							<div class="col">
-								<p>
-									<strong>Nro. Cuenta:</strong> 1190777<br>
-									<strong>Titular:</strong> Fernando Vera<br>
-									Vision Banco</p>
+								{{ settings.gift_account_novia | raw }}
 							</div>
-							<div class="col">
-								<p>
-									<strong>Nro. Cuenta:</strong> 13731991<br>
-									<strong>Titular:</strong> Lorena Gaete<br>
-									Vision Banco</p>
-							</div>
-							
-							
-							
+							{# <div class="col">
+								{{ settings.gift_account_novio | raw }}
+							</div>															 #}
 						</div>
 
 					</div>

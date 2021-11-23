@@ -1,0 +1,10 @@
+plugin:
+    name: 'fvera.weddingmanager::lang.plugin.name'
+    description: 'fvera.weddingmanager::lang.plugin.description'
+    author: fvera
+    icon: oc-icon-check-circle
+    homepage: ''
+permissions:
+    fvera.weddingmanager.manage_categories:
+        tab: Wedding Mannager
+        label: Gestor de boda
