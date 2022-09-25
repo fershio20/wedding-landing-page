@@ -1,11 +1,10 @@
 :root {
-  
+
   --contrast-color: #C1C69B;
   --main-color: #f7d2d2;
   --secondary-color: #C1C69B;
   --third-color: #F4EEED;
   --main-text: #665166;
-  --bg-color: #f7f8fa;
   --bg-color: #f7f8fa;
 }
 
@@ -43,16 +42,14 @@
 #main-section {
     min-height: 720px;
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-color: linear-gradient(0deg, #F8F9FB, #fffcfc);
+    background: linear-gradient(0deg, #F8F9FB, #fffcfc) no-repeat top center;
 }
 
 html,body{
-	font-family: 'Baskerville', sans-serif;
-	font-size: 18px;
-	color: var(--main-text);
-	scroll-behavior: smooth;
+    font-family: 'Baskerville', sans-serif;
+    font-size: 18px;
+    color: var(--main-text);
+    scroll-behavior: smooth;
     background-color: var(--bg-color);
 }
 div#main-first-step {
@@ -60,7 +57,7 @@ div#main-first-step {
     background-size: contain;
     background-position: center center;
     position: relative;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-repeat: no-repeat;
 }
 div#main-second-step {
@@ -101,19 +98,19 @@ div#deco-img-r {
     font-size: 32px;
 }
 .text-main-container{
-	min-height: 720px;
+    min-height: 720px;
 }
 h1{
-	font-size: 100px;
+    font-size: 100px;
 }
 h2{
-	font-size: 65px;
+    font-size: 65px;
 }
 h1,h2,h3{
-	font-family: 'Stadella', serif;
+    font-family: 'Stadella', serif;
 }
 .title{
-	font-family: 'Stadella', serif;
+    font-family: 'Stadella', serif;
 }
 
 img.flower-img-main {
@@ -123,29 +120,29 @@ img.flower-img-main {
 }
 
 .bg-accent{
-	background-color: var(--main-color); 
+    background-color: var(--main-color);
 }
 .bg-white{
-	background-color: #FFF; 
+    background-color: #FFF;
 }
 
 .text-white{
-	color: #FFF;
+    color: #FFF;
 }
 .wdng-text-accent{
-	color: var(--main-color);
+    color: var(--main-color);
 }
 
 .wdng-txt-subtitle{
-	font-size: 23px;
+    font-size: 23px;
 
 }
 h3.wdng-text-accent{
-	font-size: 60px;
+    font-size: 60px;
 }
 
 .btn.bg-accent{
-	border-radius: 20px;
+    border-radius: 20px;
 }
 
 .card-wdng {
@@ -171,9 +168,8 @@ h3.wdng-text-accent{
     border: 2px solid var(--main-color);
     border-radius: 0 0 20px 20px;
     border-top: 0;
-    padding: 20px;
     background-color: var(--main-color);
-    padding-top: 0;
+    padding: 0 20px 20px;
 }
 #wdng-locations p{
     color: #665166;
@@ -200,7 +196,7 @@ section#engagement > .container {
     border-radius: 20px;
     height: 200px;
 }
-}
+
 
 /*span.tick-label.tick-text {
     font-size: 32px;
@@ -257,6 +253,7 @@ span.htext {
 
 .engagementMessage {
     margin-top: 160px;
+    color: #FFF
 }
 
 .col-md-4.cardGallery {
@@ -270,7 +267,7 @@ span.htext {
     height: 350px;
     max-height: 100%;
     border-radius: 4px;
-    box-shadow: 0px 2px 2px 4px rgb(215 183 162 / 5%);
+    box-shadow: 0 2px 2px 4px rgb(215 183 162 / 5%);
     cursor: pointer;
     transition: .15s ease-in-out;
 }
@@ -289,6 +286,48 @@ section#giftsSection {
 #mobile-main-block{
     display: none;
 }
+
+.name-container {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name-container h1 {
+    color: #c88e38;
+    font-size: 117px;
+    position: relative;
+}
+.date-box {
+    display: inline-flex;
+}
+.date-box > div {
+    width: 100px;
+    text-align: center;
+    align-self: center;
+}
+.date-box > div p {
+    margin-bottom: 0;
+}
+
+.date-box-side {
+    text-transform: uppercase;
+    border-top: 1px solid #ecd6af;
+    border-bottom: 1px solid #ecd6af;
+    min-width: auto;
+}
+
+.date-box-day {
+    font-size: 50px;
+    color: #c88e38;
+}
+
 @media screen and (max-width: 414px){
     #main-section {
         min-height: auto;

@@ -3,10 +3,9 @@
 # ===================================
 tabs:
     fields:
-        nombre_novia:
-            label: Nombre de la Novia
-            span: auto
-            type: text
+        section_general:
+            label: General
+            type: section
             tab: General
         nombre_novio:
             label: Nombre del novio
@@ -19,9 +18,16 @@ tabs:
             span: auto
             type: text
             tab: General
+        boda_date:
+            label: Fecha
+            description: Fecha de la boda
+            span: left
+            type: datepicker
+            mode: date
+            tab: General
         boda_tag:
             label: Frase de la boda
-            span: auto
+            span: left
             type: text
             tab: General
         boda_tag_author:
@@ -29,13 +35,105 @@ tabs:
             span: auto
             type: text
             tab: General
-        boda_date:
-            label: Fecha
-            description: Fecha de la boda
+        dress_code:
+            label: Dress code
+            type: text
             span: auto
-            type: datepicker
-            mode: date
             tab: General
+        link_confirmacion:
+            label: Link confirmacion de asistencia
+            type: text
+            span: auto
+            tab: General
+        link_dj:
+            label: Link form DJ
+            type: text
+            span: auto
+            tab: General
+
+# SWITCHERS #
+        section_switches:
+            label: Configuración de secciones
+            type: section
+            tab: General
+        switch_hero:
+            label: Hero
+            type: switch
+            tab: General
+        switch_our_story:
+            label: Nuestra Historia
+            type: switch
+            tab: General
+        switch_date:
+            label: Save the Date
+            type: switch
+            tab: General
+        switch_location:
+            label: location 1
+            type: switch
+            tab: General
+        switch_location_2:
+            label: Location 2
+            type: switch
+            tab: General
+#        switch_dress_code:
+#            label: Verificar seccion
+#            type: switch
+#            tab: General
+        switch_gift_list:
+            label: Lista de Regalos
+            type: switch
+            tab: General
+        switch_engagement:
+            label: Nuestro compromiso
+            type: switch
+            tab: General
+        switch_confirmation:
+            label: Confirmar Invitacion
+            type: switch
+            tab: General
+        switch_gallery:
+            label: Galería de Fotos
+            type: switch
+            tab: General
+        switch_dj:
+            label: DJ List
+            type: switch
+            tab: General
+#        switch_footer:
+#            label: Save the Date
+#            type: switch
+#            tab: General
+
+        #
+
+        section_hero:
+            label: Banner Principal
+            type: section
+            tab: hero
+        section_our_story:
+            label: Nuestra Historia
+            type: section
+            tab: Nuestra Historia
+        section_history:
+            label: Nuestra Historia
+            type: section
+            tab: Nuestra Historia
+        photo_history:
+            label: Foto sección Nuestra Historia
+            type: mediafinder
+            mode: image
+            span: auto
+            tab: Nuestra Historia
+        nuestra_historia:
+            label: Nuestra Historia
+            type: richeditor
+            span: auto
+            size: huge
+            tab: Nuestra Historia
+
+
+
         section_location:
             label: Direcciones
             type: section
@@ -60,37 +158,24 @@ tabs:
             type: text
             span: auto
             tab: Direcciones
-        dress_code:
-            label: Dress code
-            type: text
-            span: auto
-            tab: General
-        link_confirmacion:
-            label: Link confirmacion de asistencia
-            type: text
-            span: auto
-            tab: General
-        link_dj:
-            label: Link form DJ
-            type: text
-            span: auto
-            tab: General
-        section_history:
-            label: Nuestra Historia
+
+        section_compromiso:
+            tab: Compromiso
+            label: Compromiso
             type: section
-            tab: Pagina Principal
-        photo_history:
-            label: Foto sección Nuestra Historia
+        compromiso_img:
+            tab: Compromiso
             type: mediafinder
             mode: image
             span: auto
-            tab: Pagina Principal
-        nuestra_historia:
-            label: Nuestra Historia
+            imageWidth: 250
+            imageHeight: 250
+        compromiso_description:
+            tab: Compromiso
             type: richeditor
+            label: Compromiso
             span: auto
-            size: huge
-            tab: Pagina Principal
+
         gallery:
             label: Galeria de Fotos
             type: repeater

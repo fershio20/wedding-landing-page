@@ -29,8 +29,8 @@
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-NR8HP6D');</script>
 	<!-- End Google Tag Manager -->
-	<link rel="icon" 
-      type="image/svg" 
+	<link rel="icon"
+      type="image/svg"
       href="{{'assets/images/icon-cheer.svg' | theme }}">
 	<link rel="stylesheet" href="{{'assets/libs/flip-master/dist/flip.min.css' | theme }}" />
 	<link rel="stylesheet" href="{{'assets/node_modules/bootstrap/dist/css/bootstrap.css' | theme }}">
@@ -41,7 +41,7 @@
     <link type="text/css" rel="stylesheet" href="{{'assets/node_modules/lightgallery/css/lg-thumbnail.css' | theme}}" />
     <link type="text/css" rel="stylesheet" href="{{'assets/node_modules/phosphor-icons/src/css/phosphor.css' | theme}}" />
     <link rel="stylesheet" href="{{'assets/node_modules/aos/dist/aos.css' | theme}}" />
-	<link rel="stylesheet" href="{{'assets/css/custom.css' | theme }}">
+	<link rel="stylesheet" href="{{'assets/css/custom-1.css' | theme }}">
 	<title>.::{{settings.nombre_novia}} y {{ settings.nombre_novio }}::.</title>
 </head>
 <body>
@@ -52,9 +52,9 @@
 	{% page %}
 
 	{% partial 'general/footer' %}
-	
 
-	<script type="text/javascript" src="{{'assets/node_modules/jquery/dist/jquery.min.js' | theme }}"></script> 
+
+	<script type="text/javascript" src="{{'assets/node_modules/jquery/dist/jquery.min.js' | theme }}"></script>
 	<script type="text/javascript" src="{{'assets/libs/flip-master/dist/flip.js' | theme }}"></script>
     <script src="{{'assets/node_modules/lightgallery/lightgallery.umd.js' | theme}}"></script>
     <script src="{{'assets/node_modules/aos/dist/aos.js' | theme }}"></script>
@@ -68,7 +68,7 @@
 			$(document).ready(()=>{
 				lightGallery(document.getElementById("gallery-container"), {
 					speed: 500,
-					plugins: [lgZoom,lgThumbnail] 
+					plugins: [lgZoom,lgThumbnail]
 				});
 
 				AOS.init();
@@ -77,13 +77,13 @@
 			function handleTickInit(tick) {
 
 			  var nextYear = (new Date()).getFullYear() + 1;
-			  
+
 			  Tick.count.down('2021-12-12T17:00:00').onupdate = function(value) {
 			    tick.value = value;
 			  };
 
 			}
 	</script>
-	
+
 </body>
 </html>

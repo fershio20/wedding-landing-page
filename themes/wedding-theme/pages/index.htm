@@ -2,17 +2,46 @@ title = "Home"
 url = "/"
 layout = "main-layout"
 ==
-{% partial 'main/main' %}
-{% partial 'main/timer' %}
-{#
-	{% partial 'main/ceremony' %}
-	{% partial 'main/party' %}
-#}
-{% partial 'main/gifts' %}
-{# {% partial 'main/engagement' %} #}
-{% partial 'main/call-to-action' %}
-{% partial 'main/photos' %}
-{% partial 'main/dj' %}
+{% if settings.switch_hero %}
+    {% partial 'main/main' %}
+{% endif %}
+
+{% if settings.switch_our_story %}
+    {% partial 'main/our-story' %}
+{% endif %}
+
+{% if settings.switch_date%}
+    {% partial 'main/timer' %}
+{% endif %}
+
+{% if settings.switch_location %}
+    {% partial 'main/location' %}
+{% endif %}
+
+{% if settings.switch_location_2 %}
+    {% partial 'main/ceremony' %}
+    {% partial 'main/party' %}
+{% endif %}
+
+{% if settings.switch_gift_list%}
+    {% partial 'main/gifts' %}
+{% endif %}
+
+{% if settings.switch_engagement%}
+    {% partial 'main/engagement' %}
+{% endif %}
+
+{% if settings.switch_confirmation %}
+    {% partial 'main/call-to-action' %}
+{% endif %}
+
+{% if settings.switch_gallery%}
+    {% partial 'main/photos' %}
+{% endif %}
+
+{% if settings.switch_dh%}
+    {% partial 'main/dj' %}
+{% endif %}
 {% partial 'main/dress-code' %}
 
 

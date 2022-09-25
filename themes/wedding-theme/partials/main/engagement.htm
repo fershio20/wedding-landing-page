@@ -1,22 +1,15 @@
+{% set bg_img = settings.compromiso_img ? (settings.compromiso_img | media) : ('assets/images/engagement.png' | theme) %}
+
 <section id="engagement">
-	<div class="container py-5 position-relative" style="background-image: url({{'assets/images/engagement.png' | theme }})">
+	<div class="container py-5 position-relative"
+         style="background-image: url({{bg_img}})">
 		<div class="row">
 			<div class="col-12 text-center">
 				<h1 class="text-light-theme">
 					Nuestro Compromiso
 				</h1>
 				<div class="engagementMessage">
-					<h6 class="text-light-theme">¿Cómo decidimos que queriamos estar juntos para siempre?</h6>
-					<p class="text-light-theme px-5">
-						Fuimos una semana de vacaciones a Uruguay, el ultimo dia decidimos dar un ultimo paseo en la playa por la mañana y después de caminar un rato le miro y le pido si se quería casar conmigo...
-					</p>
-					<p class="text-light-theme">
-						Ella me abrazo
-					</p>
-					<p class="text-light-theme description">
-						¡Y DIJO QUE SI!
-
-					</p>
+                    {{ settings.compromiso_description | raw }}
 				</div>
 			</div>
 		</div>

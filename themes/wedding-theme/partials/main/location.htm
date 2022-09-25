@@ -1,0 +1,34 @@
+<section id="wdng-locations" class="main-bg py-2 py-md-5">
+    <div class="container">
+        {% if this.page.id == 'index' %}
+            <div class="row text-center mt-2 mt-md-5 px-4">
+                <div class="col-12 col-md-6">
+                    <div>
+                        <div class="mx-auto mb-4 mt-5 mt-md-auto">
+                            <img src="{{'assets/images/icon-church.svg' | theme }}">
+                        </div>
+                        <h2 class="text-white">Ceremonia</h2>
+                        <p>{{ settings.direccion_ceremonia | raw }}</p>
+                        <a class="wdng-btn-alt btn  bg-accent mt-2" href="{{ settings.direccion_iglesia_link }}" >Ver dirección</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-5 mt-md-auto">
+                    <div>
+                        <div class="mx-auto mb-4">
+                            <img src="{{'assets/images/icon-cheer.svg' | theme }}">
+                        </div>
+                        <h2 class="text-white">Fiesta</h2>
+                        <p>{{ settings.direccion_fiesta | raw }}</p>
+                        <a class="wdng-btn-alt btn  bg-accent mt-2" href="{{ settings.direccion_fiesta_link }}" >Ver dirección</a>
+                    </div>
+                </div>
+                <div class="col-12 mt-5 pb-4 pb-md-auto pt-md-5">
+                    <h2 class="text-white">Dress Code</h2>
+                    <p class="">
+                        {{settings.dress_code}}
+                    </p>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</section>
