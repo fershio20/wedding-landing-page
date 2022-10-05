@@ -186,7 +186,7 @@ section#engagement > .container {
     position: relative;
     height: 640px;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     border-radius: 10px;
     display: flex;
@@ -338,6 +338,9 @@ section#giftsSection {
     font-size: 50px;
     color: #c88e38;
 }
+.cardGallery .img-fluid {
+    object-position: center center !important;
+}
 @media screen and (min-width: 415px) and (max-width: 757px){
     div#main-first-step {
 
@@ -347,6 +350,10 @@ section#giftsSection {
         position: absolute;
         bottom: -10px;
         max-width: 100%;
+    }
+    section#engagement > .container {
+
+        height: auto;
     }
 }
 @media screen and (max-width: 414px){
@@ -428,7 +435,10 @@ section#giftsSection {
         height: 180px;
     }
 }
+section#engagement > .container {
 
+    height: auto;
+}
 .btn-alt {
     color: #d8ac9c;
     background-color: #fcf9fc;
