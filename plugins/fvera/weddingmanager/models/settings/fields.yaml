@@ -19,7 +19,7 @@ tabs:
             type: text
             tab: General
         boda_date:
-            label: Fecha
+            label: Fecha de la boda
             description: Fecha de la boda
             span: left
             type: datepicker

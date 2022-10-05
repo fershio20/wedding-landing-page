@@ -49,6 +49,7 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NR8HP6D"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
+
 	{% page %}
 
 	{% partial 'general/footer' %}
@@ -78,7 +79,7 @@
 
 			  var nextYear = (new Date()).getFullYear() + 1;
 
-			  Tick.count.down('2021-12-12T17:00:00').onupdate = function(value) {
+			  Tick.count.down('{{ settings.boda_date ? settings.boda_date | date('Y-m-d') : '2021-12-12' }}T17:00:00').onupdate = function(value) {
 			    tick.value = value;
 			  };
 

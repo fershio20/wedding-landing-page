@@ -47,7 +47,7 @@
 
 html,body{
     font-family: 'Baskerville', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--main-text);
     scroll-behavior: smooth;
     background-color: var(--bg-color);
@@ -183,13 +183,25 @@ a {
     color: #d7b7a2;
 }
 section#engagement > .container {
+    position: relative;
     height: 640px;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
-
+section#engagement .container.py-5.position-relative:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000001c;
+    border-radius: 10px;
+}
 .call-container {
     text-align: center;
     background: var(--secondary-color);
@@ -252,7 +264,6 @@ span.htext {
 }
 
 .engagementMessage {
-    margin-top: 160px;
     color: #FFF
 }
 
@@ -327,7 +338,17 @@ section#giftsSection {
     font-size: 50px;
     color: #c88e38;
 }
+@media screen and (min-width: 415px) and (max-width: 757px){
+    div#main-first-step {
 
+        background-size: cover;
+    }
+    .deco-img-box {
+        position: absolute;
+        bottom: -10px;
+        max-width: 100%;
+    }
+}
 @media screen and (max-width: 414px){
     #main-section {
         min-height: auto;
@@ -355,6 +376,7 @@ section#giftsSection {
         height: 100%;
         background-position: center center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     #coupleNames h1.text-main {
         font-size: 50px !important;

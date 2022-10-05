@@ -1,6 +1,6 @@
 <section id="main-section">
     <div id="main-first-step" style="background-image: url({{ 'assets/images/backgrounds/default_bg_2.png' | theme }})">
-        <div class="justify-content-center h-100 align-items-end text-main-container p-relative d-none d-md-flex">
+        <div class="justify-content-center h-100 align-items-end text-main-container p-relative d-flex">
             <div class="name-container">
                 <div>
                     <p class="description">Nos casamos</p>
@@ -39,6 +39,35 @@
     </div>
     <div id="mobile-main-block"
          style="background-image: url({{ 'assets/images/backgrounds/seed-bg-mob.png' | theme }})">
+        <div class="name-container">
+            <div>
+                <p class="description">Nos casamos</p>
+            </div>
+            <div  class="novia-tag">
+                <h1>{{ settings.nombre_novia }}</h1>
+            </div>
+            <div class="separator-tag">
+                <p class="description">y</p>
+            </div>
+            <div class="novio-tag">
+                <h1>{{ settings.nombre_novio }}</h1>
+            </div>
+            <div class="date-box">
+                <div class="date-box-side">Domingo</div>
+                <div>
+
+                    <p>
+                        <span class="text-uppercase">{{settings.boda_date|date("M")|trans}} </span>    <br>
+                        <span class="date-box-day">{{settings.boda_date|date("d")}}</span>      <br>
+                        {{settings.boda_date|date("Y")}}    <br>
+                    </p>
+
+                </div>
+                <div class="date-box-side">
+                    17PM
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
