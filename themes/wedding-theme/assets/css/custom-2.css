@@ -1,0 +1,471 @@
+:root {
+
+  --contrast-color: #C1C69B;
+  --main-color: #798f80;
+  --secondary-color: #C1C69B;
+  --third-color: #F4EEED;
+  --main-text: #665166;
+  --bg-color: #f7f8fa;
+}
+
+.text-main{
+    color: var(--third-color);
+}
+.text-accent{
+    color: var(--main-color);
+}
+
+.text-light-theme{
+    color: var(--third-color);
+}
+
+.contrast-bg{
+    background-color: var(--contrast-color);
+}
+
+@font-face {
+  font-family: 'Architects Daughter';
+  src: url('../fonts/ArchitectsDaughter-Regular.ttf');
+}
+@font-face {
+  font-family: 'Autography';
+  src: url('../fonts/Autography.otf');
+}
+@font-face {
+  font-family: 'Stadella';
+  src: url('../fonts/Stadella.ttf');
+}
+@font-face {
+  font-family: 'Baskerville';
+  src: url('../fonts/Baskerville.ttf');
+}
+@font-face {
+  font-family: 'Great Vibes';
+  src: url('../fonts/GreatVibes-Regular.otf');
+}
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src: url('../fonts/PT_Sans-Narrow-Web-Regular.ttf');
+}
+#main-section {
+    min-height: 720px;
+    background-size: contain;
+    background: linear-gradient(0deg, #F8F9FB, #fffcfc) no-repeat top center;
+}
+
+html,body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+    color: var(--main-text);
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+}
+div#main-first-step {
+    height: 100vh;
+    background-size: contain;
+    background-position: center center;
+    position: relative;
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+}
+div#main-second-step {
+    min-height: 740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-bg{
+    background-color: var(--main-color);
+}
+.f-100{
+    font-size: 100px;
+}
+.couple-name h1 {
+    font-size: 120px;
+}
+.couple-name {
+    position: absolute;
+    top: calc(30vh);
+}
+.deco-img-box{
+    position: absolute;
+    /*bottom: -120px;*/
+    /* max-width: 520px;     */
+}
+.history-photo-box img {
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 rgb(189 76 76 / 33%);
+}
+div#deco-img-l {
+    left: -100px;
+}
+div#deco-img-r {
+    right: -100px;
+}
+.description{
+    font-size: 32px;
+}
+.text-main-container{
+    min-height: 720px;
+}
+h1{
+    font-size: 100px;
+}
+h2{
+    font-size: 65px;
+}
+h1,h2,h3{
+    font-family: 'Great Vibes', serif;
+}
+.title{
+    font-family: 'Great Vibes', serif;
+}
+
+img.flower-img-main {
+    position: absolute;
+    top: 10px;
+    max-width: 640px;
+}
+
+.bg-accent{
+    background-color: var(--main-color);
+}
+.bg-white{
+    background-color: #FFF;
+}
+
+.text-white{
+    color: #FFF;
+}
+.wdng-text-accent{
+    color: var(--main-color);
+}
+
+.wdng-txt-subtitle{
+    font-size: 23px;
+
+}
+h3.wdng-text-accent{
+    font-size: 60px;
+}
+
+.btn.bg-accent{
+    border-radius: 20px;
+}
+
+.card-wdng {
+    text-align: center;
+    min-height: 350px;
+}
+
+.card-wdng-header {
+    background: var(--main-color);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    margin-top: -2px;
+}
+
+.card-wdng-body {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--main-color);
+    border-radius: 0 0 20px 20px;
+    border-top: 0;
+    background-color: var(--main-color);
+    padding: 0 20px 20px;
+}
+#wdng-locations img{
+    filter: invert(1);
+}
+#wdng-locations p, .card-wdng-body{
+    color: #C5DBCD;
+}
+.wdng-btn-alt {
+    background: #FFF;
+    color: var(--main-color);
+    font-weight: 500;
+}
+a {
+    color: #9ABFDB;
+}
+section#engagement > .container {
+    position: relative;
+    height: 640px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+section#engagement .container.py-5.position-relative:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000001c;
+    border-radius: 10px;
+}
+.call-container {
+    text-align: center;
+    background: var(--main-color);
+    border-radius: 0;
+    height: 200px;
+}
+
+
+/*span.tick-label.tick-text {
+    font-size: 32px;
+
+}*/
+
+div#timerSection {
+    max-width: 860px;
+    margin: auto;
+}
+
+.tick {
+    font-size:1rem;
+}
+
+.tick-label {
+    font-size:.375em;
+    text-align:center;
+}
+
+.tick-group {
+    margin:0 .25em;
+    text-align:center;
+}
+
+
+#saveTheDate {
+    min-height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 0 !important;
+}
+
+h1.wdng-text-accent {
+    background: #798F80;
+    color: #FFF8F3;
+    padding: 30px 0;
+    margin-bottom: 40px;
+}
+#coupleNames {
+    background: var(--main-color);
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px;
+    opacity: 0.8;
+    color: #F1E8EA;
+}
+
+.tick-flip-panel {
+    color: #F4EEED;
+    background-color: var(--main-color);
+}
+span.htext {
+    border-bottom: 2px solid #d8ac9c;
+}
+
+.engagementMessage {
+    color: #FFF
+}
+
+.col-md-4.cardGallery {
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.cardGallery .img-fluid {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    max-height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 4px rgb(215 183 162 / 5%);
+    cursor: pointer;
+    transition: .15s ease-in-out;
+}
+.cardGallery .img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+}
+.bgSecondary{
+    background-size: cover;
+    background-position: top center;
+}
+section#giftsSection {
+    background-position: bottom center;
+    padding: 100px 0;
+}
+#mobile-main-block{
+    display: none;
+}
+
+.name-container {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name-container h1 {
+    color: #8F7C73;
+    font-size: 117px;
+    position: relative;
+}
+.date-box {
+    display: inline-flex;
+}
+.date-box > div {
+    width: 100px;
+    text-align: center;
+    align-self: center;
+}
+.date-box > div p {
+    margin-bottom: 0;
+}
+
+.date-box-side {
+    text-transform: uppercase;
+    border-top: 1px solid #ecd6af;
+    border-bottom: 1px solid #ecd6af;
+    min-width: auto;
+}
+
+.date-box-day {
+    font-size: 50px;
+    color: #8F7C73;
+}
+.cardGallery .img-fluid {
+    object-position: center center !important;
+}
+@media screen and (min-width: 415px) and (max-width: 757px){
+    div#main-first-step {
+
+        background-size: cover;
+    }
+    .deco-img-box {
+        position: absolute;
+        bottom: -10px;
+        max-width: 100%;
+    }
+    section#engagement > .container {
+
+        height: auto;
+    }
+}
+@media screen and (max-width: 414px){
+    #main-section {
+        min-height: auto;
+        height: 100vh;
+        position: relative;
+        padding: 0;
+    }
+    .block-our-history {
+        margin-top: 50px;
+    }
+    .text-main-container {
+        min-height: auto;
+    }
+    div#main-first-step {
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        background-attachment: unset;
+        background-repeat: no-repeat;
+        display: none;
+    }
+    #mobile-main-block {
+        display: block;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #coupleNames h1.text-main {
+        font-size: 50px !important;
+        line-height: 36px;
+    }
+    div#coupleNames {
+        margin-bottom: auto;
+    }
+    #saveTheDate >div > h1 {
+        font-size: 60px !important;
+        margin-top: 30px;
+    }
+    #saveTheDate {
+        min-height: auto;
+    }
+    section#callToAction {
+        padding: 0;
+    }
+    h1.text-white {
+        font-size: 60px;
+    }
+    h1.wdng-text-accent.f-100 {
+        font-size: 60px;
+    }
+    section {
+        padding: 0 15px;
+    }
+    .description {
+        font-size: 24px;
+    }
+    span.tick-label.tick-text {
+        font-size: 18px;
+    }
+    h3.wdng-text-accent {
+        font-size: 42px;
+    }
+    .engagementMessage {
+        margin-top: 20px;
+    }
+    h1.text-light-theme {
+        font-size: 52px;
+    }
+    .col-md-4.cardGallery .img-fluid {
+        object-fit: cover;
+        width: 350px;
+        height: 180px;
+    }
+    .col-md-4.cardGallery {
+        height: 180px;
+    }
+}
+section#engagement > .container {
+
+    height: auto;
+}
+.btn-alt {
+    color: #d8ac9c;
+    background-color: #fcf9fc;
+    border-color: #fcf9fc;
+    transition: .15s;
+}
+
+
+.btn-alt:hover {
+    color: #d8ac9c;
+    background-color: #e8e6e8;
+    border-color: #e8e6e8;
+}
