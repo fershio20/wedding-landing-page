@@ -114,7 +114,7 @@ h1{
 h2{
     font-size: 65px;
 }
-h1,h2,h3{
+h1,h2,h3,h5{
     font-family: 'Great Vibes', serif;
 }
 .title{
@@ -374,9 +374,28 @@ section#giftsSection {
     }
 }
 @media screen and (max-width: 414px){
+    .top-bg-design {
+        background-size: 220px !important;
+        background-position: right top !important;
+    }
+    h1.wdng-text-accent {
+        font-size: 65px;
+    }
+    .bottom-bg-design {
+        position: absolute;
+        top: 0;
+        z-index: 100000;
+        height: 100%;
+        width: 100%;
+        rotate: 180deg;
+        background-repeat: no-repeat;
+        background-size: 220px;
+        left: 0;
+        background-position: top right;
+    }
     #main-section {
         min-height: auto;
-        height: 100vh;
+        height: 650px;
         position: relative;
         padding: 0;
     }

@@ -1,15 +1,19 @@
 
 <section id="saveTheDate" class="text-center py-5" style="background-image: url({{'assets/images/backgrounds/bg-side-left-1.png' | theme }})">
-	<div>
-		<h1 class="wdng-text-accent" style="font-size: 100px;">Save the Date</h1>
-		<p class="description">Ya estamos contando los días para la gran fecha</p>
-		<p class="description ">
-		{{ settings.boda_date | date('d') }} <span class="text-accent">-</span>
-		{{ settings.boda_date | date('m') }} <span class="text-accent">-</span>
-		{{ settings.boda_date | date('Y') }}
+    <div class="row">
+        <div class="col-12 px-0 px-md-auto">
+            <div>
+                <h1 class="wdng-text-accent">Save the Date</h1>
+                <p class="description">Ya estamos contando los días para la gran fecha</p>
+                <p class="description ">
+                    {{ settings.boda_date | date('d') }} <span class="text-accent">-</span>
+                    {{ settings.boda_date | date('m') }} <span class="text-accent">-</span>
+                    {{ settings.boda_date | date('Y') }}
 
-		</h6>
-	</div>
+                    </h6>
+            </div>
+        </div>
+    </div>
 	<div class="container">
 		<div class="row">
 			<div class="col-12 mt-2 mt-md-5">
