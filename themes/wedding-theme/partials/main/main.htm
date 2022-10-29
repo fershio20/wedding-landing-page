@@ -16,7 +16,18 @@
                     <h1>{{ settings.nombre_novio }}</h1>
                 </div>
                 <div class="date-box">
-                    <div class="date-box-side">Domingo</div>
+                    {% set semana = {
+                        'Sunday': 'Domingo',
+                        'Monday': 'Lunes',
+                        'Tuesday': 'Martes',
+                        'wednesday': 'Miercoles',
+                        'Thursday': 'Jueves',
+                        'Friday': 'Viernes',
+                        'Saturday': 'Sábado',
+                    }
+                    %}
+                    <div class="date-box-side">{{ settings.boda_date | date('l')  |  replace(semana)  }}</div>
+
                     <div>
 
                         <p>
@@ -55,7 +66,7 @@
                 <h1>{{ settings.nombre_novio }}</h1>
             </div>
             <div class="date-box">
-                <div class="date-box-side">Domingo</div>
+                <div class="date-box-side">{{ settings.boda_date | date('l')  |  replace(semana)  }}</div>
                 <div>
 
                     <p>
