@@ -20,10 +20,18 @@
                         'Sunday': 'Domingo',
                         'Monday': 'Lunes',
                         'Tuesday': 'Martes',
-                        'wednesday': 'Miercoles',
+                        'Wednesday': 'Miercoles',
                         'Thursday': 'Jueves',
                         'Friday': 'Viernes',
                         'Saturday': 'Sábado',
+                    }
+                    %}
+                    {% set mes = {
+                        'Jan': 'Ene',
+                        'Apr': 'Abr',
+                        'Jul': 'Jul',
+                        'Aug': 'Ago',
+                        'Dec': 'Dic',
                     }
                     %}
                     <div class="date-box-side">{{ settings.boda_date | date('l')  |  replace(semana)  }}</div>
@@ -31,7 +39,7 @@
                     <div>
 
                         <p>
-                            <span class="text-uppercase">{{settings.boda_date|date("M")|trans}} </span>    <br>
+                            <span class="text-uppercase">{{settings.boda_date|date("M")|  replace(mes)}} </span>    <br>
                             <span class="date-box-day">{{settings.boda_date|date("d")}}</span>      <br>
                             {{settings.boda_date|date("Y")}}    <br>
                         </p>
@@ -70,7 +78,7 @@
                 <div>
 
                     <p>
-                        <span class="text-uppercase">{{settings.boda_date|date("M")|trans}} </span>    <br>
+                        <span class="text-uppercase">{{settings.boda_date|date("M")|  replace(mes)}} </span>    <br>
                         <span class="date-box-day">{{settings.boda_date|date("d")}}</span>      <br>
                         {{settings.boda_date|date("Y")}}    <br>
                     </p>
