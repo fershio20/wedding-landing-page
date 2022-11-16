@@ -76,6 +76,10 @@ tabs:
             label: Location 2
             type: switch
             tab: General
+        switch_dresscode:
+            label: Dress code
+            type: switch
+            tab: General
 #        switch_dress_code:
 #            label: Verificar seccion
 #            type: switch

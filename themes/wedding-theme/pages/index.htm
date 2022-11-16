@@ -22,6 +22,9 @@ layout = "main-layout"
     {% partial 'main/ceremony' %}
     {% partial 'main/party' %}
 {% endif %}
+{% if settings.switch_dresscode%}
+    {% partial 'main/dress-code' %}
+{% endif %}
 
 {% if settings.switch_gift_list%}
     {% partial 'main/gifts' %}
@@ -42,7 +45,7 @@ layout = "main-layout"
 {% if settings.switch_dh%}
     {% partial 'main/dj' %}
 {% endif %}
-{% partial 'main/dress-code' %}
+
 
 
 
